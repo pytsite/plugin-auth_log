@@ -1,9 +1,13 @@
-# PytSite Authentication Logging Plugin
+# PytSite Authentication Log Plugin
 
-Logging of authentication events.
+Authentication events logging.
 
 
 ## Changelog
 
+### 0.1.1 (2016-12-19)
+plugin.json updated.
+
+
 ### 0.1 (2016-11-28)
-- First release.
+First release.

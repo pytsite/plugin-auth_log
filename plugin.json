@@ -1,5 +1,4 @@
 {
-  "name": "Authentication Log",
   "description": {
     "en": "Logging of authentication events",
     "ru": "Запись событий аутентификации",
