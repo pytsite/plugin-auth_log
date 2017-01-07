@@ -14,5 +14,5 @@ severity_error: 'Error'
 odm_ui_browser_title_auth_log: 'Authentication log'
 odm_ui_form_title_delete_auth_log: 'Delete auth log(s)'
 
-odm_perm_group_description: 'Auth Log'
-odm_perm_delete_auth_log: 'Delete authentication log records'
+odm_auth_group_description: 'Auth Log'
+odm_auth_delete_auth_log: 'Delete authentication log records'
