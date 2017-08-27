@@ -1,4 +1,6 @@
 {
+  "name": "plugins.auth_log",
+  "version": "0.1.4",
   "description": {
     "en": "Logging of authentication events",
     "ru": "Запись событий аутентификации",
