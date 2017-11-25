@@ -1,6 +1,7 @@
-"""PytSite Authentication Log Plugin Event Handlers.
+"""PytSite Authentication Log Plugin Events Handlers
 """
-from pytsite import auth as _auth, odm as _odm, router as _router, lang as _lang
+from pytsite import router as _router, lang as _lang
+from plugins import auth as _auth, odm as _odm
 from . import _api
 
 __author__ = 'Alexander Shepetko'
@@ -9,19 +10,19 @@ __license__ = 'MIT'
 
 
 def auth_sign_in(user: _auth.model.AbstractUser):
-    """pytsite.auth.sign_in.
+    """auth.sign_in.
     """
     _create_odm_entity(user, _lang.t('auth_log@login'))
 
 
 def auth_sign_out(user: _auth.model.AbstractUser):
-    """pytsite.auth.sign_out.
+    """auth.sign_out.
     """
     _create_odm_entity(user, _lang.t('auth_log@logout'))
 
 
 def auth_sign_in_error(exception, user: _auth.model.AbstractUser):
-    """pytsite.auth.sign_in_error.
+    """auth.sign_in_error.
     """
     _create_odm_entity(user, str(exception), _api.SEVERITY_WARNING)
 

@@ -1,8 +1,9 @@
-"""PytSite Authentication Log Plugin ODM Models.
+"""PytSite Authentication Log Plugin ODM Models
 """
 from typing import Tuple as _Tuple
-from pytsite import odm as _odm, odm_ui as _odm_ui, auth as _auth, geo_ip as _geo_ip, lang as _lang, \
-    auth_storage_odm as _auth_storage_odm
+from pytsite import lang as _lang
+from plugins import auth as _auth, odm as _odm, auth_storage_odm as _auth_storage_odm, geo_ip as _geo_ip, \
+    odm_ui as _odm_ui
 from . import _api
 
 __author__ = 'Alexander Shepetko'

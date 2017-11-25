@@ -1,4 +1,4 @@
-"""PytSite Authentication Log Plugin API.
+"""PytSite Authentication Log Plugin API
 """
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
