@@ -6,6 +6,11 @@ Authentication events logging.
 ## Changelog
 
 
+### 1.2 (2017-12-02)
+
+Added support for last `geo_ip` plugin update.
+
+
 ### 1.1 (2017-12-02)
 
 - Support for PytSite-6.1.
