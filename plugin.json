@@ -1,6 +1,6 @@
 {
   "name": "auth_log",
-  "version": "1.0",
+  "version": "1.1",
   "description": {
     "en": "Logging of authentication events",
     "ru": "Запись событий аутентификации",
@@ -16,10 +16,8 @@
     "packages": [],
     "plugins": [
       "admin",
-      "auth",
       "auth_storage_odm",
       "geo_ip",
-      "odm",
       "odm_ui"
     ]
   }

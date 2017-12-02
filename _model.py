@@ -79,7 +79,7 @@ class AuthLog(_odm_ui.model.UIEntity):
         """
         user = ''
         if self.user:
-            user = '<a href="{}">{}</a>'.format(self.user.profile_view_url, self.user.full_name)
+            user = self.user.full_name
 
         ip = self.ip
         g_ip = self.geo_ip
