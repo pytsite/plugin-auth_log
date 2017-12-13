@@ -75,8 +75,12 @@ class AuthLog(_odm_ui.model.UIEntity):
         """Get single UI browser row hook.
         """
         user = ''
-        if self.user:
-            user = self.user.full_name
+        try:
+            if self.user:
+                user = self.user.full_name
+
+        except _auth.error.UserNotFound:
+            pass
 
         ip = self.ip
         g_ip = self.geo_ip
