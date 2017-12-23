@@ -53,7 +53,7 @@ class AuthLog(_odm_ui.model.UIEntity):
         return self.f_get('severity')
 
     @property
-    def geo_ip(self) -> dict:
+    def geo_ip(self) -> _geo_ip.GeoIP:
         return _geo_ip.resolve(self.ip)
 
     @classmethod
@@ -84,7 +84,7 @@ class AuthLog(_odm_ui.model.UIEntity):
 
         ip = self.ip
         g_ip = self.geo_ip
-        geo = '{}, {}'.format(g_ip['country'], g_ip['city']) if g_ip['country'] else ''
+        geo = '{}, {}'.format(g_ip.country, g_ip.city) if g_ip.country else ''
         description = self.description
         modified = self.f_get('_modified', fmt='pretty_date_time')
 
