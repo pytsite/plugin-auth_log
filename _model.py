@@ -1,14 +1,14 @@
 """PytSite Authentication Log Plugin ODM Models
 """
+__author__ = 'Alexander Shepetko'
+__email__ = 'a@shepetko.com'
+__license__ = 'MIT'
+
 from typing import Tuple as _Tuple
 from pytsite import lang as _lang
 from plugins import auth as _auth, odm as _odm, auth_storage_odm as _auth_storage_odm, geo_ip as _geo_ip, \
     odm_ui as _odm_ui
 from . import _api
-
-__author__ = 'Alexander Shepetko'
-__email__ = 'a@shepetko.com'
-__license__ = 'MIT'
 
 
 class AuthLog(_odm_ui.model.UIEntity):

@@ -6,6 +6,11 @@ Authentication events logging.
 ## Changelog
 
 
+### 1.4.1 (2018-01-26)
+
+Permission's name fixed.
+
+
 ### 1.4 (2017-12-23)
 
 Support for `geo_ip-1.6`.

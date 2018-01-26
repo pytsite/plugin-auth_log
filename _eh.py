@@ -1,12 +1,12 @@
 """PytSite Authentication Log Plugin Events Handlers
 """
-from pytsite import router as _router, lang as _lang
-from plugins import auth as _auth, odm as _odm
-from . import _api
-
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
+
+from pytsite import router as _router, lang as _lang
+from plugins import auth as _auth, odm as _odm
+from . import _api
 
 
 def auth_sign_in(user: _auth.model.AbstractUser):
