@@ -1,6 +1,6 @@
 {
   "name": "auth_log",
-  "version": "1.4.1",
+  "version": "1.5",
   "description": {
     "en": "Logging of authentication events",
     "ru": "Запись событий аутентификации",
@@ -13,7 +13,6 @@
     "url": "https://shepetko.com"
   },
   "requires": {
-    "packages": [],
     "plugins": [
       "admin",
       "auth",
@@ -21,7 +20,7 @@
       "font_awesome",
       "geo_ip>=1.6",
       "odm",
-      "odm_ui"
+      "odm_ui>=3.0"
     ]
   }
 }
