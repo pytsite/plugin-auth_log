@@ -6,6 +6,11 @@ Authentication events logging.
 ## Changelog
 
 
+### 1.5.1 (2018-04-25)
+
+Permissions issue fixed.
+
+
 ### 1.5 (2018-04-14)
 
 Support for `odm_ui-3.0`.

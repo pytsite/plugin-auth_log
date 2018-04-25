@@ -30,15 +30,15 @@ def auth_sign_in_error(exception, user: _auth.model.AbstractUser):
 def _create_odm_entity(user: _auth.model.AbstractUser, description: str, severity=_api.SEVERITY_INFO):
     """Helper function.
     """
-    _auth.switch_user_to_system()
-
-    e = _odm.dispense('auth_log')
-    e.f_set('user', user)
-    e.f_set('ip', _router.request().remote_addr)
-    e.f_set('severity', severity)
-    e.f_set('description', description)
-    e.save()
-
-    _auth.restore_user()
+    try:
+        _auth.switch_user_to_system()
+        e = _odm.dispense('auth_log')
+        e.f_set('user', user)
+        e.f_set('ip', _router.request().remote_addr)
+        e.f_set('severity', severity)
+        e.f_set('description', description)
+        e.save()
+    finally:
+        _auth.restore_user()
 
     return e

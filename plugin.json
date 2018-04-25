@@ -1,6 +1,6 @@
 {
   "name": "auth_log",
-  "version": "1.5",
+  "version": "1.5.1",
   "description": {
     "en": "Logging of authentication events",
     "ru": "Запись событий аутентификации",
