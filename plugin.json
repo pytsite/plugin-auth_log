@@ -1,6 +1,6 @@
 {
   "name": "auth_log",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": {
     "en": "Logging of authentication events",
     "ru": "Запись событий аутентификации",
@@ -8,14 +8,14 @@
   },
   "url": "https://github.com/pytsite/plugin-auth_log",
   "author": {
-    "name": "Alexander Shepetko",
+    "name": "Oleksandr Shepetko",
     "email": "a@shepetko.com",
     "url": "https://shepetko.com"
   },
   "requires": {
     "plugins": [
       "admin",
-      "auth",
+      "auth>=3.6",
       "auth_storage_odm",
       "font_awesome",
       "geo_ip>=1.6",

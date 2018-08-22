@@ -6,6 +6,11 @@ Authentication events logging.
 ## Changelog
 
 
+### 1.5.2 (2018-08-22)
+
+User's `full_name` usage replaced with `first_last_name`.
+
+
 ### 1.5.1 (2018-04-25)
 
 Permissions issue fixed.

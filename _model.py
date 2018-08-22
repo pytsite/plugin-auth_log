@@ -1,6 +1,6 @@
 """PytSite Authentication Log Plugin ODM Models
 """
-__author__ = 'Alexander Shepetko'
+__author__ = 'Oleksandr Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
@@ -77,7 +77,7 @@ class AuthLog(_odm_ui.model.UIEntity):
         user = ''
         try:
             if self.user:
-                user = self.user.full_name
+                user = self.user.first_last_name
 
         except _auth.error.UserNotFound:
             pass
