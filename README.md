@@ -6,6 +6,11 @@ Authentication events logging.
 ## Changelog
 
 
+### 2.0 (2018-10-06)
+
+Support of `pytsite-8.x`.
+
+
 ### 1.5.2 (2018-08-22)
 
 User's `full_name` usage replaced with `first_last_name`.

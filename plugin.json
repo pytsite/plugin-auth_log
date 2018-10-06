@@ -1,6 +1,6 @@
 {
   "name": "auth_log",
-  "version": "1.5.2",
+  "version": "2.0",
   "description": {
     "en": "Logging of authentication events",
     "ru": "Запись событий аутентификации",
@@ -13,14 +13,14 @@
     "url": "https://shepetko.com"
   },
   "requires": {
-    "plugins": [
-      "admin",
-      "auth>=3.6",
-      "auth_storage_odm",
-      "font_awesome",
-      "geo_ip>=1.6",
-      "odm",
-      "odm_ui>=3.0"
-    ]
+    "pytsite": "8.x",
+    "plugins": {
+      "admin": "2.x",
+      "auth": "3.x",
+      "auth_storage_odm": "3.x",
+      "geo_ip>": "2.x",
+      "odm": "5.x",
+      "odm_ui": "4.x"
+    }
   }
 }
