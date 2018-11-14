@@ -6,6 +6,11 @@ Authentication events logging.
 ## Changelog
 
 
+### 2.1 (2018-11-14)
+
+Support of `odm_ui-5.x`.
+
+
 ### 2.0.1 (2018-10-06)
 
 `plugin.json` fixed.
