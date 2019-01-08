@@ -56,8 +56,7 @@ class AuthLog(_odm_ui.model.UIEntity):
     def geo_ip(self) -> _geo_ip.GeoIP:
         return _geo_ip.resolve(self.ip)
 
-    @classmethod
-    def odm_ui_browser_setup(cls, browser: _odm_ui.Browser):
+    def odm_ui_browser_setup(self, browser: _odm_ui.Browser):
         """Setup ODM UI browser hook.
         """
         browser.default_sort_field = '_created'
