@@ -70,7 +70,7 @@ class AuthLog(_odm_ui.model.UIEntity):
             ('_created', 'auth_log@created'),
         ]
 
-    def odm_ui_browser_row(self) -> tuple:
+    def odm_ui_browser_row(self) -> dict:
         """Get single UI browser row hook.
         """
         user = ''
@@ -98,4 +98,11 @@ class AuthLog(_odm_ui.model.UIEntity):
 
         severity = '<span class="label label-{}">{}</span>'.format(severity_class, severity_name)
 
-        return user, ip, geo, description, severity, modified
+        return {
+            'user': user,
+            'ip': ip,
+            'geo_data': geo,
+            'description': description,
+            'severity': severity,
+            '_created': modified,
+        }

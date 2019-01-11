@@ -1,6 +1,6 @@
 {
   "name": "auth_log",
-  "version": "2.3",
+  "version": "2.4",
   "description": {
     "en": "Logging of authentication events",
     "ru": "Запись событий аутентификации",
@@ -20,7 +20,7 @@
       "auth_storage_odm": "4.x",
       "geo_ip": "2.x",
       "odm": "5.x",
-      "odm_ui": "7.x"
+      "odm_ui": ">=7.1<8"
     }
   }
 }
