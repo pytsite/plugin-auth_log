@@ -16,7 +16,7 @@ class AuthLog(_odm_ui.model.UIEntity):
         """Hook.
         """
         self.define_field(_auth_storage_odm.field.User('user'))
-        self.define_field(_odm.field.String('ip', required=True))
+        self.define_field(_odm.field.String('ip', is_required=True))
         self.define_field(_odm.field.Integer('severity', default=_api.SEVERITY_INFO))
         self.define_field(_odm.field.String('description'))
         self.define_field(_odm.field.Virtual('geo_ip'))

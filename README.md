@@ -6,6 +6,11 @@ Authentication events logging.
 ## Changelog
 
 
+### 2.5 (2019-03-04)
+
+Support of `odm-6.0`.
+
+
 ### 2.4 (2019-01-11)
 
 Support of `odm_ui-7.1`.
