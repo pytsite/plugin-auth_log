@@ -17,6 +17,7 @@
     "plugins": {
       "admin": "^2.0",
       "auth": "^3.0",
+      "auth_admin": "^4.3",
       "auth_storage_odm": "^4.0",
       "geo_ip": "^2.0",
       "odm": "^6.0",

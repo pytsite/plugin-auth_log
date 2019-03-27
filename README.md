@@ -6,6 +6,11 @@ Authentication events logging.
 ## Changelog
 
 
+### 2.5.2 (2019-03-27)
+
+Dependency fixed.
+
+
 ### 2.5.1 (2019-03-27)
 
 IP address detection fixed.

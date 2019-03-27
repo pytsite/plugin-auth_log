@@ -18,10 +18,6 @@ def plugin_load_wsgi():
     events.listen('auth@sign_out', _eh.auth_sign_out)
     events.listen('auth@sign_in_error', _eh.auth_sign_in_error)
 
-    # Admin's sidebar section
-    if not admin.sidebar.get_section('security'):
-        admin.sidebar.add_section('security', 'auth_log@security', 1000)
-
     # Admin's sidebar menu
     admin_href = router.rule_path('odm_ui@admin_browse', {'model': 'auth_log'})
     admin.sidebar.add_menu('security', 'auth_log', 'auth_log@log', admin_href, 'fa fas fa-history', weight=30)
