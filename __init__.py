@@ -24,5 +24,4 @@ def plugin_load_wsgi():
 
     # Admin's sidebar menu
     admin_href = router.rule_path('odm_ui@admin_browse', {'model': 'auth_log'})
-    admin.sidebar.add_menu('security', 'auth_log', 'auth_log@log', admin_href, 'fa fas fa-history', weight=30,
-                           permissions='odm_auth@delete.auth_log')
+    admin.sidebar.add_menu('security', 'auth_log', 'auth_log@log', admin_href, 'fa fas fa-history', weight=30)

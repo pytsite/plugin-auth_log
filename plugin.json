@@ -1,6 +1,6 @@
 {
   "name": "auth_log",
-  "version": "2.5",
+  "version": "2.5.1",
   "description": {
     "en": "Logging of authentication events",
     "ru": "Запись событий аутентификации",
@@ -13,7 +13,7 @@
     "url": "https://shepetko.com"
   },
   "requires": {
-    "pytsite": ">=8.9",
+    "pytsite": ">=8.10",
     "plugins": {
       "admin": "^2.0",
       "auth": "^3.0",

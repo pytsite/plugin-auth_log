@@ -6,6 +6,11 @@ Authentication events logging.
 ## Changelog
 
 
+### 2.5.1 (2019-03-27)
+
+IP address detection fixed.
+
+
 ### 2.5 (2019-03-04)
 
 Support of `odm-6.0`.

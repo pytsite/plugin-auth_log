@@ -34,7 +34,7 @@ def _create_odm_entity(user: _auth.model.AbstractUser, description: str, severit
         _auth.switch_user_to_system()
         e = _odm.dispense('auth_log')
         e.f_set('user', user)
-        e.f_set('ip', _router.request().remote_addr)
+        e.f_set('ip', _router.request().real_remote_addr)
         e.f_set('severity', severity)
         e.f_set('description', description)
         e.save()
