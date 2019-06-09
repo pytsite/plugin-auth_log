@@ -6,6 +6,11 @@ Authentication events logging.
 ## Changelog
 
 
+### 2.6 (2019-03-27)
+
+Support of `odm_auth-4.0`.
+
+
 ### 2.5.2 (2019-03-27)
 
 Dependency fixed.
